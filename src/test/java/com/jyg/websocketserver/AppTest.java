@@ -1,5 +1,8 @@
 package com.jyg.websocketserver;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
@@ -35,4 +38,12 @@ public class AppTest
     {
         assertTrue( true );
     }
+    
+    public static void main(String[] args) {
+    	Logger logger = LoggerFactory.getLogger(AppTest.class); 
+		
+    	logger.info("123456");
+		
+	}
+    
 }

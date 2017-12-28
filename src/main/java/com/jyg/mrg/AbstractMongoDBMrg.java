@@ -68,7 +68,20 @@ public abstract class AbstractMongoDBMrg {
 				);
 
 		MongoClientOptions mongoClientOptions = new MongoClientOptions.Builder()
-				.codecRegistry(codecRegistry).socketKeepAlive(true).build();
+				.codecRegistry(codecRegistry).socketKeepAlive(true)
+				
+//				.connectionsPerHost(100)//最大连接数
+//				
+//				.minConnectionsPerHost(20)//最小连接数
+//				
+//				.maxWaitTime(200)//最大连接等待时间
+//				
+//				.maxConnectionIdleTime(600000)//最大连接闲置时间
+				
+				
+				.build();
+		
+		
 
 		return mongoClientOptions;
 	}
